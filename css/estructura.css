@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightslategray;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: beige;
+}
+
+button {
+  background-color: rgb(1, 32, 1);
+  border-radius: 4px;
+  margin: auto;
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+  
+.container_grid {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  background-color: rgb(21, 255, 0);
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.container_grid div {
+  background-color: lightblue;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.item_aside {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
